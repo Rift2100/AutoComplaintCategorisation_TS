@@ -1,0 +1,6 @@
+gradio
+groq
+sarvamai
+google-genrativeai
+SpeechRecognition
+dotenv
