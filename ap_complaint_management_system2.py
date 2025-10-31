@@ -1,8 +1,3 @@
-# AP Mandal Complaint Management System (Smart Voice + Document OCR Auto-Fill)
-# Latest change: Added WAV upload option and text processing for voice complaints
-# Comments: Three auto-fill methods - voice recording OR WAV upload OR text input + document upload
-# Dependencies: gradio, pandas, groq, numpy, speech_recognition, google-generativeai, pillow
-
 import gradio as gr
 import pandas as pd
 import numpy as np
@@ -26,7 +21,6 @@ import google.generativeai as genai
 from google.generativeai.types import GenerationConfig
 from sarvamai import SarvamAI
 
-# Load environment variables
 load_dotenv()
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
@@ -34,9 +28,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 llm_categorizer = EnhancedComplaintCategorizer(GROQ_API_KEY)
 tracker = ComplaintTracker()
 
-# --- Document OCR Processing Functions ---
 def process_single_image_ocr(model, image: Image.Image, target_language: str = "English"):
-    """Process a single image for OCR and translation."""
     try:
         instruction = (
             "First, perform Optical Character Recognition (OCR) on this image to extract ALL text. "
@@ -472,7 +464,7 @@ def generate_complaint_number():
     import random
     year = datetime.datetime.now().year
     number = random.randint(100000, 999999)
-    return f"AP-{year}-{number:06d}"
+    return f"UI-{year}-{number:06d}"
 
 def load_assignment_matrix():
     return pd.read_csv("complaint_assignment_matrix_levels.csv")
@@ -622,7 +614,7 @@ def check_status(search_method, search_value):
     except Exception as e:
         return f"Error searching complaints: {str(e)}\n\nPlease try again."
 
-with gr.Blocks(title="AP Complaint Management System", css="""
+with gr.Blocks(title="Complaint Management System", css="""
     .compact-audio-upload {
         max-height: 450px !important;
     }
@@ -634,7 +626,7 @@ with gr.Blocks(title="AP Complaint Management System", css="""
         max-height: 450px !important;
     }
 """) as demo:
-    gr.Markdown("# AP Complaint Management System\nSubmit citizen complaints for Mandal-level resolution")
+    gr.Markdown("# Complaint Management System\nSubmit citizen complaints for Mandal-level resolution")
     
     # TAB 1: Voice-Based Complaint
     with gr.Tab(" Voice-Based Complaint"):
@@ -849,10 +841,10 @@ with gr.Blocks(title="AP Complaint Management System", css="""
         The system combines advanced speech recognition, OCR, and AI to make complaint submission effortless!
         """)
     
-    gr.Markdown("---\n**AP Complaint Management System** | Voice + Document OCR Enabled Platform with AI Classification")
+    gr.Markdown("---\n**Complaint Management System** | Voice + Document OCR Enabled Platform with AI Classification")
 
 def main():
-    print("Starting AP Complaint Management System (Voice + Document OCR)...")
+    print("Starting Complaint Management System (Voice + Document OCR)...")
     print("Initializing systems...")
     
     try:
