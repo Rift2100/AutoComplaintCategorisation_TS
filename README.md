@@ -1,13 +1,13 @@
-# AP Complaint Management System
+# Complaint Management System
 
-This project is a multi-modal complaint management system designed for citizens to submit grievances at the Mandal level in Andhra Pradesh. It leverages various AI and Large Language Model (LLM) technologies to streamline the complaint submission process through voice, text, and document uploads.
+This project is a multi-modal complaint management system designed for citizens to submit grievances. It leverages various AI and Large Language Model (LLM) technologies to streamline the complaint submission process through voice, text, and document uploads.
 
 The system automatically transcribes audio, performs OCR on documents, extracts key information (name, phone, address, etc.), categorizes the complaint, and assigns it to the appropriate department.
 
 ## Key Features
 
 *   **Multi-Modal Input**:
-    *   **Voice Complaints**: Record audio directly, upload a WAV file, or type/paste text. Supports English, Hindi, and Telugu.
+    *   **Voice Complaints**: Record audio directly, upload a WAV file, or type/paste text. Supported Language right now: English, Hindi, and Telugu.
     *   **Document Complaints**: Upload images (JPG, PNG) of handwritten or printed letters.
 *   **AI-Powered Automation**:
     *   **Speech-to-Text**: Utilizes SarvamAI and Groq for accurate, multi-lingual voice transcription.
@@ -77,7 +77,7 @@ The system automatically transcribes audio, performs OCR on documents, extracts 
 
 1.  Execute the main script from your terminal:
     ```bash
-    python ap_complaint_management_system2.py
+    python complaint_management_system.py
     ```
 
 2.  The application will start and provide a local URL (usually `http://127.0.0.1:8080`). Open this URL in your web browser to access the system.
