@@ -1,6 +1,6 @@
 gradio
 groq
 sarvamai
-google-genrativeai
+google-generativeai
 SpeechRecognition
 dotenv
