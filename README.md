@@ -2,7 +2,7 @@
 
 This project is a multi-modal complaint management system designed for citizens to submit grievances. It leverages various AI and Large Language Model (LLM) technologies to streamline the complaint submission process through voice, text, and document uploads.
 
-The system automatically transcribes audio, performs OCR on documents, extracts key information (name, phone, address, etc.), categorizes the complaint, and assigns it to the appropriate department.
+The system automatically transcribes audio, performs OCR on documents, extracts key information (name, phone, address, etc.), categorizes the complaint, and helps assign it to the appropriate department.
 
 ## Key Features
 
