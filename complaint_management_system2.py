@@ -814,7 +814,7 @@ with gr.Blocks(title="Complaint Management System", css="""
         5. **Submit** your complaint
         
         ### **Voice Input Example:**
-        *"Hello, my name is Rajesh Kumar, my phone number is 9876543210, my Aadhaar is 123456789012, my address is D.No. 45 Gandhi Road, Guntur, Andhra Pradesh. My complaint is about street lights not working in our area for the past one week."*
+        *"Hello, my name is Rajesh Kumar, my phone number is 9876543210, my Aadhaar is 123456789012, my address is D.No. 45 Gandhi Road, Baddi, Himachal Pradesh. My complaint is about street lights not working in our area for the past one week."*
         
         ### **System Features:**
         - **Smart Categorization**: Auto-identifies complaint types using AI
