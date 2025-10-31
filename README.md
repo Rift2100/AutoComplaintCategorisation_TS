@@ -12,7 +12,7 @@ The system automatically transcribes audio, performs OCR on documents, extracts 
 *   **AI-Powered Automation**:
     *   **Speech-to-Text**: Utilizes SarvamAI and Groq for accurate, multi-lingual voice transcription.
     *   **Optical Character Recognition (OCR)**: Uses Google's Gemini 2.5 Pro to extract and translate text from documents in multiple Indian languages.
-    *   **Smart Information Extraction**: Leverages Groq's Llama 3.1 to automatically parse text from voice or documents and fill in the complainant's details (Name, Phone, Aadhaar, Address).
+    *   **Smart Information Extraction**: Leverages Groq's Llama 3.1 to automatically parse text from voice or documents and fill in the person's details (Name, Phone, Aadhaar, Address).
     *   **AI-Based Categorization**: Intelligently classifies the complaint into predefined categories using a hybrid keyword and LLM approach.
 *   **Automated Workflow**:
     *   **Assignment**: Automatically assigns the complaint to the relevant department based on a predefined matrix.
